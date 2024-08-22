@@ -17,8 +17,12 @@
                 secondarytext: '#494949',
                 primarybtn: '#ABEF5F',
                 primarybg: '#F4F4F4',
+                borderbg: '#E9E9E9',
+                navbtnbg: '#1C1C1C',
+                headerbg: 'linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))',
                 
-                'body-opacity': 'rgb(51, 51, 51)',
+                
+                
                  
               }
             }
@@ -27,16 +31,17 @@
       </script>
 </head>
 <body>
-  <header class="bg-gradient-to-r from-cyan-500 to-blue-500">
-    <section >
+  <header class="headerbg">
+    <!-- navbar section start -->
+    <section class="container mx-auto">
       <div class="navbar">
-        <div class="navbar-start">
+        <div class="navbar-start lg:w-96 flex flex-row-reverse justify-between w-full">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class=" badge bg-white w-10 h-10 border-2 border-solid border-borderbg rounded-full lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="bg-green"
+                class="h-10 w-10"
+                fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path
@@ -46,53 +51,135 @@
                   d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
-            <ul
+            <!-- <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Home</a></li>
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"> -->
+              <!-- <li><a>Home</a></li>
               <li><a>Services</a></li>
               <li><a>Portfolio</a></li>
               <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
-            </ul>
+              <li><a>Contact Us</a></li> -->
+            <!-- </ul> -->
           </div>
-          <a class="btn btn-ghost text-xl">Rinterio</a>
+          <div>
+            <div class="badge bg-primarybtn w-8 h-8 rounded-full">
+              <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke-width="1.5" 
+              stroke="currentColor" 
+              class="size-4">
+                <path 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round" 
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>           
+            </div>            
+            <a class="text-2xl font-extrabold"  href="">Rinterio</a>
+          </div>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
+          <ul class="menu menu-horizontal px-1 gap-5">
+            <li><a class="font-extrabold">Home</a></li>
             <li><a>Services</a></li>
             <li><a>Portfolio</a></li>
             <li><a>Blogs</a></li>
             <li><a>Contact Us</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <a class="btn">Button</a>
+        <div class="navbar-end hidden lg:flex gap-4">
+          <div>
+            <div class="badge bg-white w-8 h-8 border-2 border-solid border-borderbg rounded-full">
+              <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke-width="2" 
+              stroke="currentColor" 
+              class="size-6">
+                <path 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round" 
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>                 
+            </div>            
+          </div>
+          <div>
+            <div class="badge bg-white w-8 h-8 border-2 border-solid border-borderbg rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke-width="2" 
+              stroke="currentColor" 
+              class="size-6">
+                <path 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round" 
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+                               
+            </div>            
+          </div>
+          <a class="btn bg-primarybtn font-extrabold rounded-3xl">Book Consultant
+            <div>
+              <div class="badge bg-navbtnbg w-8 h-8 border-2 border-solid border-borderbg rounded-full">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke-width="2" 
+                  stroke="currentColor" 
+                  class="size-6 text-white">
+                    <path 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round" 
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>                                 
+              </div>            
+            </div>
+          </a>
         </div>
       </div> 
     </section>
-    <!-- svg badey banner section complete  -->
-    <section>
+    <!-- navbar section end -->
+    <!-- banner section start  -->
+    <section class="container mx-auto">
       <div>
-        <div class="hero min-h-screen">
+        <div class="hero">
           <div class="hero-content text-center">
             <div class="max-w-6xl text-center space-y-6">
               <div class="flex justify-center">
                 <img src="./assets/banner.png" alt="">
-              </div>
-              
+              </div>              
               <h1 class="text-6xl font-extrabold text-headlines">A barn house of this design has a striking appearance</h1>
               <p class="text-secondarytext">
                 The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
               </p>
-              <button class="btn bg-primarybtn opacity-50 text-headlines text-xl">View Details</button>
+              <button class="btn bg-primarybtn opacity-50 text-headlines text-xl font-bold rounded-3xl px-6">View Details
+                  <div class="badge bg-primarybtn w-8 h-8 border-primarybtn rounded-full">
+                    <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke-width="2" 
+                    stroke="currentColor" 
+                    class="size-4">
+                      <path 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>           
+                  </div>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- banner section start  -->
   </header>
+  <!-- header part end  -->
   <main class="bg-primarybg">
     <!-- we design complete  -->
     <section class="container mx-auto">      
