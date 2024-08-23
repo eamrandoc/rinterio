@@ -28,13 +28,35 @@
                 
                 
                  
-              }
+              },
+
+              backgroundImage: {
+                discussbg: "url('./assets/bg.jpg')",
+            },
+            fontFamily: {
+              manrope: 'manrope'
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             }
           }
         }
       </script>
 </head>
-<body>
+<body class="font-manrope">
   <header class="headerbg">
     <!-- navbar section start -->
     <section class="container mx-auto">
@@ -386,7 +408,7 @@
     </section>
     <!-- Read Our Articles and News -->
     <section class="container mx-auto">
-      <div class="my-24">
+      <div class="my-12 py-12">
         <div class="hero">
           <div class="hero-content text-center">
             <div class="max-w-2xl space-y-6">              
@@ -574,8 +596,8 @@
     </section>
   </main>
   <!-- lets discuss start  -->
-  <section class="">
-    <div class="max-w-4xl mx-auto">
+  <section class="bg-discussbg bg-cover bg-center h-full">
+    <div class="max-w-4xl mx-auto py-24">
       <div class="hero">
         <div class="hero-content text-center">
           <div class="max-w-2xl space-y-6">
@@ -600,7 +622,7 @@
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-6 bg-gray-700 p-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
         <label for="">
           <input type="text" class="w-full p-5 rounded-3xl" placeholder="First Name*">
         </label>
